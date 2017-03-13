@@ -1,0 +1,65 @@
+#social_bottom
+  position: fixed
+  bottom: 0
+  height: 50px
+  padding: 15px
+  width: 290px
+  background: transparentize(#bdc3c7, 0.2)
+  left: calc(50vw - 160px)
+  border-radius: 20px 20px 0 0
+
+  .sb
+    position: relative
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    display: inline-block
+    margin-right: 5px
+    color: white
+    transition: all 0.25s ease-in-out
+    cursor: pointer
+
+    span
+      position: absolute
+      font-size: 30px
+      left: 10px
+      top: 10px
+    &:last-child
+      margin-right: 0
+    &:hover
+      transform: scale(1.2)
+      box-shadow: 0 5px 10px transparentize(#000, 0.75)
+
+  #instagram
+    span
+      left: 13.5px
+  #patreon
+    overflow: hidden
+    background: #e6461a
+    img
+      position: absolute
+      width: 27px
+      height: 27px
+      left: 12.5px
+      top: 11px
+  #twitter
+    background: #1da1f2
+  #google
+    background: #dd4b39
+  #youtube
+    background: #cd201f
+  #instagram
+    background: #9b6954
+
+  @media screen and (max-width: 500px)
+    position: relative
+    margin: 150px auto 100px auto
+    bottom: auto
+    left: auto
+    background: white
+    border-radius: 0
+    box-shadow: -10px 10px 40px transparentize(#000, 0.5)
+
+    .sb:hover
+      transform: none
+      box-shadow: none

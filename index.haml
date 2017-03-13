@@ -1,0 +1,46 @@
+%html
+  %head
+    %title Bobby Burns
+
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'stylesheets/main.css'}
+    %link{:rel=>'stylesheet', :type=>'text/css', :href=>'bower_components/Ionicons/css/ionicons.min.css'}
+
+    %script{:src=>'bower_components/jquery/dist/jquery.min.js'}
+    %script{:src=>'scripts/main.js'}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700,800|Montserrat:400,900" rel="stylesheet">
+  %body
+    #sec_1
+      #overlay_title
+        #first_name Bobby
+        #last_name Burns
+      %img#bobby_icon{:src=>'assets/Bobby_Burns_Icon.jpg'}
+      #description
+        #title Bobby Burns is a ________
+        #body
+          %ul
+            %li YouTuber
+            %li Comedian
+    #sec_2
+      #sec_2_title Movie Reviews
+      #movie_fade_in
+        .mv
+          %img{:src=>'assets/movie_covers/batvsup.jpg'}
+        .mv
+          %img{:src=>'assets/movie_covers/ghost.jpg'}
+        .mv
+          %img{:src=>'assets/movie_covers/killb.jpg'}
+        .mv
+          %img{:src=>'assets/movie_covers/marvel.jpg'}
+    #social_bottom
+      #patreon.sb
+        %img{:src=>'assets/patreon_logo.png'}
+      #instagram.sb
+        %span.ion-social-instagram
+      #youtube.sb
+        %span.ion-social-youtube
+      #twitter.sb
+        %span.ion-social-twitter
+      #google.sb
+        %span.ion-social-googleplus
